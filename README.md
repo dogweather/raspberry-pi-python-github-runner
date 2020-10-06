@@ -3,7 +3,15 @@
 ![Python application on self-hosted Raspberry Pi](https://github.com/dogweather/raspberry-pi-python-github-runner/workflows/Python%20application%20on%20self-hosted/badge.svg)
 
 
-Raspberry Pi's can be used as low-configuration [self-hosted GitHub Runners](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/about-self-hosted-runners). They can do CI builds and tests, and also run [periodic jobs using cron syntax](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule).
+Raspberry Pi's can be used as low-configuration [self-hosted GitHub Runners](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/about-self-hosted-runners). They can do CI builds and tests, and also run [periodic jobs using cron syntax](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule):
+
+```bash
+pi@pi1 ~/actions-runner> ./run.sh
+
+√ Connected to GitHub
+
+2020-10-06 23:24:36Z: Listening for Jobs
+```
 
 This repo solves a problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 

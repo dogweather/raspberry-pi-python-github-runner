@@ -3,7 +3,7 @@
 ![Python application on self-hosted Raspberry Pi](https://github.com/dogweather/raspberry-pi-python-github-runner/workflows/Python%20application%20on%20self-hosted/badge.svg)
 
 
-Raspberry Pi's can be used as low-configuration self-hosted GitHub Action Runners. They can do CI builds and tests, and also run periodic batch jobs.
+Raspberry Pi's can be used as low-configuration self-hosted GitHub Action Runners. They can do CI builds and tests, and also run periodic batch jobs using cron syntax.
 
 This repo solves the problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 

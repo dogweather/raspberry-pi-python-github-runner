@@ -20,19 +20,21 @@ This repo is a minimal Python template application which runs several workflows:
 
 It's also still compatible with MacOS and GitHub's cloud servers.
 
-## Compatible Pi's
-
-These were tested on a **Raspberry Pi 4 Model B** with 4G RAM, running Raspberry Pi OS.
-I ran two runners on it simultaneously, and there was **tons** of RAM leftover.
-
-For some reason, GitHub's runner client won't run on a Pi Zero W. I'm
-not sure exactly what the problem is. The `config` and `run.sh` scripts crashess with `Segmentation fault` on startup
-and so I suspect that low memory is the issue. It's the only material difference between
-the Zero W and 4. However, the Zero's 512Mb should be plenty for the runner, so
-I'm not sure; I'm looking into it.
-
 ## How to run this yourself
 
 1. Fork this repo
 2. In your new repo's **Settings/Actions**, click **Add runner** and add your Raspberry Pi as a Linux / ARM runner. [GitHub's Docs for this](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/adding-self-hosted-runners)
 3. Once the runner is listening for new tasks, make some kind of small commit in your forked repo. You should see tasks sent down to the Raspberry Pi both in the Runner's output and GitHub's Actions tab.
+
+## Compatible Pi's
+
+These were tested on a **Raspberry Pi 4 Model B** with 4G RAM, running Raspberry Pi OS.
+I ran two runners on it simultaneously, and there was **tons** of RAM leftover. I suspect it'd
+do fine on a Pi with just 1G RAM.
+
+But for some reason, GitHub's runner client won't run on a Pi Zero W (which has 512MB RAM).
+The `config` and `run.sh` scripts crashess with `Segmentation fault` on startup.
+The error seems to be around the `bin/Runner.Listener` invocation. When I try that
+command on it's own, I get `“bin/Runner.Listener” terminated by signal SIGSEGV (Address boundary error)`.
+I suspect that low memory is the issue. RAM is also the only material difference between
+the Zero W and 4.

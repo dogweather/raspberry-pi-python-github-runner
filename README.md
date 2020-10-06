@@ -1,6 +1,6 @@
 # A Python self-hosted GitHub Runner for the Raspberry Pi
 
-This is a minimal Python application with several workflow files:
+This is a minimal Python template application which runs several workflows:
 
 * One which runs on GitHub's cloud servers
 * One which runs on a self-hosted computer

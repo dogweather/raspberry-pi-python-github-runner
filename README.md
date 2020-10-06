@@ -1,5 +1,7 @@
 # A Python self-hosted GitHub Runner for the Raspberry Pi
 
+![Python application on self-hosted Raspberry Pi](https://github.com/dogweather/raspberry-pi-python-github-runner/workflows/Python%20application%20on%20self-hosted/badge.svg)
+
 This is a minimal Python template application which runs several workflows:
 
 * One which runs on GitHub's cloud servers

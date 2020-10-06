@@ -16,9 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python in a virtual env
       run: |
         sudo apt -y install python3-venv
+        python3 -m venv .env
     - name: Install dependencies
       run: |
         source .env/bin/activate

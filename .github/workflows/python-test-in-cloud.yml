@@ -16,7 +16,7 @@ jobs:
 
     - name: Set up Python in a virtual env
       run: |
-        sudo apt -y install python3-venv
+        if [[ `uname` != "Darwin" ]]; then sudo apt -y install python3-venv; fi
         python3 -m venv .env
 
     - name: Install dependencies

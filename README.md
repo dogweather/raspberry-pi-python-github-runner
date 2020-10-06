@@ -13,6 +13,8 @@ This repo solves the problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 
 process of setting up Pi runners, I made this configuration.
 
+It also runs on MacOS and GitHub's cloud servers.
+
 ## Compatible Pi's
 
 These were tested on a Raspberry Pi 4B 4G RAM, running Raspberry Pi OS.

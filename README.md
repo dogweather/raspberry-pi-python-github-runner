@@ -21,10 +21,14 @@ It's also still compatible with MacOS and GitHub's cloud servers.
 
 ## Compatible Pi's
 
-These were tested on a Raspberry Pi 4B 4G RAM, running Raspberry Pi OS.
+These were tested on a Raspberry Pi 4 Model B with 4G RAM, running Raspberry Pi OS.
+I ran two runners on it simultaneously, and there was **tons** of RAM leftover.
 
 For some reason, GitHub's runner client won't run on a Pi Zero. I'm
-not sure exactly what the problem is.
+not sure exactly what the problem is. The runner crashes on startup, and so I suspect
+that low memory is the issue because that's the only material difference between
+the Zero and 4. However, the Zero's 512Mb should be plenty for the runner, so
+I'm not sure.
 
 ## How to run this yourself
 

@@ -12,7 +12,7 @@ process of setting up a new Python app, I extracted this configuration.
 Here's a typical [Raspberry Pi runner log](https://github.com/dogweather/raspberry-pi-python-github-runner/runs/1212774604?check_suite_focus=true)
 for this repo. Check out how much detail you get vs. running a simple cron job!
 
-THis repo is a minimal Python template application which runs several workflows:
+This repo is a minimal Python template application which runs several workflows:
 
 * [One - the whole point of this repo](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test.yml) which runs on a self-hosted Raspberry Pi
 * [Another](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test-in-cloud.yml) which runs on GitHub's cloud servers

@@ -2,18 +2,17 @@
 
 ![Python application on self-hosted Raspberry Pi](https://github.com/dogweather/raspberry-pi-python-github-runner/workflows/Python%20application%20on%20self-hosted/badge.svg)
 
-This is a minimal Python template application which runs several workflows:
-
-* One which runs on GitHub's cloud servers
-* One which runs on a self-hosted computer
-* One, a Hello World shell script which also runs self-hosted
-
-
 This repo solves the problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 
-process of setting up Pi runners, I made this configuration.
+process of setting up a new Python app, I extracted this configuration.
 
-It also runs on MacOS and GitHub's cloud servers.
+This is a minimal Python template application which runs several workflows:
+
+* One which runs on a self-hosted Raspberry Pi
+* One which runs on GitHub's cloud servers
+* One, a Hello World shell script which also runs self-hosted
+
+It's also compatible with MacOS and GitHub's cloud servers.
 
 ## Compatible Pi's
 

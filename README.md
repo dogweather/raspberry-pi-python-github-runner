@@ -6,11 +6,13 @@ This repo solves the problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 
 process of setting up a new Python app, I extracted this configuration.
 
+Check out [build logs like this one](https://github.com/dogweather/raspberry-pi-python-github-runner/runs/1212774604?check_suite_focus=true) in this repo's Actions tab for examples of runs on my Raspberry Pi.
+
 This is a minimal Python template application which runs several workflows:
 
-* One which runs on a self-hosted Raspberry Pi
-* One which runs on GitHub's cloud servers
-* One, a Hello World shell script which also runs self-hosted
+* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test.yml) which runs on a self-hosted Raspberry Pi
+* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test-in-cloud.yml) which runs on GitHub's cloud servers
+* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/hello-world.yml), a Hello World shell script which also runs self-hosted
 
 It's also still compatible with MacOS and GitHub's cloud servers.
 

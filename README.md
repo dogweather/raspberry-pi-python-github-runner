@@ -6,7 +6,7 @@ This repo solves the problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 
 process of setting up a new Python app, I extracted this configuration.
 
-Check out [build logs like this one](https://github.com/dogweather/raspberry-pi-python-github-runner/runs/1212774604?check_suite_focus=true) in this repo's Actions tab for examples of runs on my Raspberry Pi.
+Check out [build logs like this one](https://github.com/dogweather/raspberry-pi-python-github-runner/runs/1212774604?check_suite_focus=true) for actual logs of Raspberry Pi runs.
 
 This is a minimal Python template application which runs several workflows:
 

@@ -5,7 +5,7 @@
 
 Raspberry Pi's can be used as low-configuration [self-hosted GitHub Runners](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/about-self-hosted-runners). They can do CI builds and tests, and also run [periodic jobs using cron syntax](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule).
 
-This repo solves the problem: GitHub's default Python setup installs
+This repo solves a problem: GitHub's default Python setup installs
 X86 binaries and doesn't work on ARM (Raspberry Pi). So, in the 
 process of setting up a new Python app, I extracted this configuration.
 

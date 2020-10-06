@@ -12,7 +12,7 @@ This is a minimal Python template application which runs several workflows:
 * One which runs on GitHub's cloud servers
 * One, a Hello World shell script which also runs self-hosted
 
-It's also compatible with MacOS and GitHub's cloud servers.
+It's also still compatible with MacOS and GitHub's cloud servers.
 
 ## Compatible Pi's
 

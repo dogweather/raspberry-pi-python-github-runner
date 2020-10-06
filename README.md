@@ -22,3 +22,9 @@ These were tested on a Raspberry Pi 4B 4G RAM, running Raspberry Pi OS.
 
 For some reason, GitHub's runner client won't run on a Pi Zero. I'm
 not sure exactly what the problem is.
+
+## How to run this yourself
+
+1. Fork this repo
+2. In your new repo's **Settings/Actions**, click **Add runner** and add your Raspberry Pi as a Linux / ARM runner. [GitHub's Docs for this](https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners/adding-self-hosted-runners)
+3. Once the runner is listening for new tasks, make some kind of small commit in your forked repo. You should see tasks sent down to the Raspberry Pi both in the Runner's output and GitHub's Actions tab.

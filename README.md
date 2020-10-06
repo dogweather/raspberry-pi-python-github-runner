@@ -13,9 +13,9 @@ Here's a typical [Raspberry Pi runner log](https://github.com/dogweather/raspber
 
 This is a minimal Python template application which runs several workflows:
 
-* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test.yml) which runs on a self-hosted Raspberry Pi
-* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test-in-cloud.yml) which runs on GitHub's cloud servers
-* [One](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/hello-world.yml), a Hello World shell script which also runs self-hosted
+* [One - the whole point of this repo](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test.yml) which runs on a self-hosted Raspberry Pi
+* [Another](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test-in-cloud.yml) which runs on GitHub's cloud servers
+* [Another simple one](https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/hello-world.yml), a Hello World shell script which also runs self-hosted
 
 It's also still compatible with MacOS and GitHub's cloud servers.
 

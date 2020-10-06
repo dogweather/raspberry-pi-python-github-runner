@@ -33,7 +33,7 @@ I ran two runners on it simultaneously, and there was **tons** of RAM leftover. 
 do fine on a Pi with just 1G RAM.
 
 But for some reason, GitHub's runner client won't run on a Pi Zero W (which has 512MB RAM).
-The `config` and `run.sh` scripts crashess with `Segmentation fault` on startup.
+The `config` and `run.sh` scripts crash with `Segmentation fault` on startup.
 The error seems to be around the `bin/Runner.Listener` invocation. When I try that
 command on it's own, I get `“bin/Runner.Listener” terminated by signal SIGSEGV (Address boundary error)`.
 I suspect that low memory is the issue. RAM is also the only material difference between
